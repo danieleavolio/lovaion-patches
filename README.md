@@ -11,6 +11,37 @@ Morphe patches for the apps I use.
 ## Patches
 
 <!-- PATCHES_START -->
+> **[v1.0.0](https://github.com/danieleavolio/lovaion-patches/releases/tag/v1.0.0)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;2 patches total
+<details open>
+<summary>📦 Column&nbsp;&nbsp;•&nbsp;&nbsp;1 patch</summary>
+<br>
+
+**🎯 Supported versions:**
+
+| 1.3.7 |
+| :---: |
+
+| 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
+|----------|----------------|-----------|
+| [Unlock Premium](#unlock-premium) | Forces the premium entitlement to always resolve as active, regardless of subscription or backend status. Support the original developer! |  |
+
+</details>
+
+<details open>
+<summary>📦 Cinemaniac&nbsp;&nbsp;•&nbsp;&nbsp;1 patch</summary>
+<br>
+
+**🎯 Supported versions:**
+
+| 5.0.7 |
+| :---: |
+
+| 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
+|----------|----------------|-----------|
+| [Unlock Pro](#unlock-pro) | Forces the Pro entitlement to always resolve as active, regardless of purchase or backend status. Support the original developer! |  |
+
+</details>
+
 <!-- PATCHES_END -->
 
 ## Supported apps
