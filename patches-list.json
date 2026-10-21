@@ -1,10 +1,10 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "patches": [
     {
       "name": "Unlock Premium",
-      "description": "Forces the premium entitlement to always resolve as active, regardless of subscription or backend status. Support the original developer!",
+      "description": "Forces the premium entitlement to always resolve as active, hides the feed's premium activation banner and shows the active plan as MORHPE in the profile. Support the original developer!",
       "default": true,
       "category": null,
       "compatiblePackages": [

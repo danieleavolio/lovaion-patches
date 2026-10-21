@@ -11,7 +11,7 @@ Morphe patches for the apps I use.
 ## Patches
 
 <!-- PATCHES_START -->
-> **[v1.1.0](https://github.com/danieleavolio/lovaion-patches/releases/tag/v1.1.0)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;2 patches total
+> **[v1.2.0](https://github.com/danieleavolio/lovaion-patches/releases/tag/v1.2.0)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;2 patches total
 <details open>
 <summary>📦 Column&nbsp;&nbsp;•&nbsp;&nbsp;1 patch</summary>
 <br>
@@ -23,7 +23,7 @@ Morphe patches for the apps I use.
 
 | 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
 |----------|----------------|-----------|
-| [Unlock Premium](#unlock-premium) | Forces the premium entitlement to always resolve as active, regardless of subscription or backend status. Support the original developer! |  |
+| [Unlock Premium](#unlock-premium) | Forces the premium entitlement to always resolve as active, hides the feed's premium activation banner and shows the active plan as MORHPE in the profile. Support the original developer! |  |
 
 </details>
 

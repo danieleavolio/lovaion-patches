@@ -1,3 +1,9 @@
+## [1.2.0](https://github.com/danieleavolio/lovaion-patches/compare/v1.1.0...v1.2.0) (2026-10-21)
+
+### ✨ New Features
+
+* hide Column premium banner and brand profile badge ([98bea3b](https://github.com/danieleavolio/lovaion-patches/commit/98bea3be207220d91bd861549177974f2bb6f54c))
+
 ## [1.1.0](https://github.com/danieleavolio/lovaion-patches/compare/v1.0.0...v1.1.0) (2026-10-21)
 
 ### ✨ New Features
