@@ -73,6 +73,45 @@ private val BYTE_PATCHES = listOf(
             0x90.toByte(), 0x04, 0xFE.toByte(), 0x04, 0x76, 0x04,
         ),
     ),
+    // Floater(props) (function #21454 @ offset 0x004ED528) is the floating
+    // "Attiva premium" banner on the feed. It is driven by useIsFree and
+    // useIsFreemium, which still read the free entitlement record, so forcing
+    // the premium gates above does not hide it. 'LoadConstNull r1; Ret r1'
+    // removes the banner for every state.
+    BytePatch(
+        where = "feed premium floater",
+        offset = 0x004ED528,
+        expected = byteArrayOf(0x89.toByte(), 0x05, 0x01, 0x45),
+        replacement = byteArrayOf(0x94.toByte(), 0x01, 0x76, 0x01),
+    ),
+    // useIsPremium() (function #18862 @ offset 0x004B5EF0) returns false when
+    // the entitlement record has not loaded yet, which would hide the profile
+    // badge. Forced to true so the profile always shows the active premium.
+    BytePatch(
+        where = "profile premium hook",
+        offset = 0x004B5EF0,
+        expected = byteArrayOf(0x34, 0x03, 0x00, 0x3B),
+        replacement = byteArrayOf(0x95.toByte(), 0x01, 0x76, 0x01),
+    ),
+    // PremiumBadge (function #21491 @ offset 0x004EDF57) looks up the label
+    // key 'profile.profile.premium' (string id 42148). Point it at the floater
+    // label key (string id 42158) instead; that translation value is replaced
+    // below and the floater itself no longer renders.
+    BytePatch(
+        where = "profile premium badge label key",
+        offset = 0x004EE15C,
+        expected = byteArrayOf(0x90.toByte(), 0x0A, 0xA4.toByte(), 0xA4.toByte()),
+        replacement = byteArrayOf(0x90.toByte(), 0x0A, 0xAE.toByte(), 0xA4.toByte()),
+    ),
+    // Italian value of 'ui.floater.floater.attiva-premium' (string id 8921 @
+    // offset 0x00128CCD). Once Floater is disabled this string is unused, so
+    // it becomes the profile badge label. Same length, edited in place.
+    BytePatch(
+        where = "profile premium badge label",
+        offset = 0x00128CCD,
+        expected = "Attiva premium".toByteArray(Charsets.UTF_8),
+        replacement = "Premium MORHPE".toByteArray(Charsets.UTF_8),
+    ),
 )
 
 private fun littleEndianUInt32(data: ByteArray, offset: Int) =
@@ -87,7 +126,8 @@ private fun ByteArray.toHexString() = joinToString(" ") { "%02X".format(it) }
 val unlockPremiumPatch = rawResourcePatch(
     name = "Unlock Premium",
     description = "Forces the premium entitlement to always resolve as active, " +
-        "regardless of subscription or backend status. Support the original developer!",
+        "hides the feed's premium activation banner and shows the active plan " +
+        "as MORHPE in the profile. Support the original developer!",
     default = true,
 ) {
     compatibleWith(COMPATIBILITY_COLUMN)
