@@ -49,7 +49,7 @@ Morphe patches for the apps I use.
 | App | Package | Version |
 |---|---|---|
 | Cinemaniac | `it.papalillo.moviestowatch` | 5.0.7 |
-| Column | `com.columnapp.column` | 1.3.7 (XAPK) |
+| Column | `com.columnapp.column` | 2.0.1 (XAPK) |
 
 ## Apply
 

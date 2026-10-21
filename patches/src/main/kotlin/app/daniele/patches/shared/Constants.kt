@@ -27,8 +27,8 @@ object Constants {
     )
 
     /**
-     * Column (com.columnapp.column). The web bundle is matched by exact
-     * content, so only the analyzed release is targeted.
+     * Column (com.columnapp.column). The Hermes bytecode bundle is matched by
+     * exact content, so only the analyzed release is targeted.
      */
     val COMPATIBILITY_COLUMN = Compatibility(
         name = "Column", // App name as it appears in the Android launcher.
@@ -43,7 +43,7 @@ object Constants {
         ),
         targets = listOf(
             // Exact release the patch was developed against.
-            AppTarget(version = "1.3.7"),
+            AppTarget(version = "2.0.1"),
         ),
     )
 }
