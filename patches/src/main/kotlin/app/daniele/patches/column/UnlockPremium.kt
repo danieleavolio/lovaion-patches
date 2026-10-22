@@ -10,6 +10,23 @@ import java.security.MessageDigest
  */
 private const val HERMES_BUNDLE = "assets/index.android.bundle"
 
+/**
+ * The runtime version expo-updates runs with. The manifest sets
+ * EXPO_RUNTIME_VERSION to the sentinel "file:fingerprint", so expo reads this
+ * asset at launch instead of using a baked-in string.
+ */
+private const val RUNTIME_VERSION_FILE = "assets/fingerprint"
+
+/** Runtime version Column 2.0.1 was released with. */
+private const val RELEASE_RUNTIME_VERSION = "2d64c7466e649087c023e8c2ac590aaa6f209b9f"
+
+/**
+ * Runtime version that was never published to the update channel. expo cannot
+ * match it against any update, so the embedded bundle is always the one that
+ * runs.
+ */
+private const val PATCHED_RUNTIME_VERSION = "0000000000000000000000000000000000000000"
+
 /** Hermes bytecode container magic. */
 private val HERMES_MAGIC = byteArrayOf(
     0xC6.toByte(), 0x1F.toByte(), 0xBC.toByte(), 0x03.toByte(),
@@ -126,8 +143,10 @@ private fun ByteArray.toHexString() = joinToString(" ") { "%02X".format(it) }
 val unlockPremiumPatch = rawResourcePatch(
     name = "Unlock Premium",
     description = "Forces the premium entitlement to always resolve as active, " +
-        "hides the feed's premium activation banner and shows the active plan " +
-        "as MORHPE in the profile. Support the original developer!",
+        "hides the feed's premium activation banner, shows the active plan " +
+        "as MORHPE in the profile and disables the app's over-the-air updates, " +
+        "which would otherwise replace the patched bundle on the next launch. " +
+        "Support the original developer!",
     default = true,
 ) {
     compatibleWith(COMPATIBILITY_COLUMN)
@@ -192,6 +211,23 @@ val unlockPremiumPatch = rawResourcePatch(
                 .digest(data.copyOfRange(0, footerOffset))
             digest.copyInto(data, footerOffset)
             bundle.writeBytes(data)
+        }
+
+        // Column ships an EAS Update channel: expo-updates downloads a pristine
+        // bundle and launches it on the next start, silently reverting the edits
+        // above. It reads its runtime version from this asset, so pointing it at
+        // a version that was never published keeps the embedded, patched bundle
+        // in use and invalidates any update already downloaded.
+        val runtimeVersionFile = get(RUNTIME_VERSION_FILE)
+        val runtimeVersion = runtimeVersionFile.readText().trim()
+        when (runtimeVersion) {
+            PATCHED_RUNTIME_VERSION -> Unit
+            RELEASE_RUNTIME_VERSION ->
+                runtimeVersionFile.writeText(PATCHED_RUNTIME_VERSION, Charsets.UTF_8)
+            else -> throw PatchException(
+                "Unexpected expo runtime version '$runtimeVersion' in $RUNTIME_VERSION_FILE. " +
+                    "This patch set targets Column 2.0.1.",
+            )
         }
     }
 }
