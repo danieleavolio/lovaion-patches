@@ -3,7 +3,7 @@ group = "app.daniele"
 patches {
     about {
         name = "Lovaion Patches"
-        description = "Morphe patches for Cinemaniac and Column. " +
+        description = "Morphe patches for Cinemaniac, Column and GuitarTuna. " +
             "Patched by Morphe — support the original developers!"
         source = "https://github.com/danieleavolio/lovaion-patches"
         author = "Daniele Avolio"

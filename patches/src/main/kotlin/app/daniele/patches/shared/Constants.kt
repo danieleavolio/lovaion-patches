@@ -46,4 +46,26 @@ object Constants {
             AppTarget(version = "2.0.1"),
         ),
     )
+
+    /**
+     * GuitarTuna (com.ovelin.guitartuna). The subscription gates are native
+     * entry points matched by exact bytes, so only the analyzed release is
+     * targeted.
+     */
+    val COMPATIBILITY_GUITARTUNA = Compatibility(
+        name = "GuitarTuna", // App name as it appears in the Android launcher.
+        packageName = "com.ovelin.guitartuna",
+        // GuitarTuna is distributed as split APKs (base + abi/locale/density).
+        apkFileType = ApkFileType.XAPK,
+        // Icon color in Morphe Manager (0xRRGGBB) - the app's teal.
+        appIconColor = 0x00A388,
+        // SHA-256 of the signing certificate (apksigner verify --print-certs).
+        signatures = setOf(
+            "432eacd50197216ca879c8fd3c1322ad6e4c51cbfc76e4138d727b75cdc4864d",
+        ),
+        targets = listOf(
+            // Exact release the patch was developed against.
+            AppTarget(version = "7.103.0"),
+        ),
+    )
 }
