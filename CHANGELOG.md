@@ -1,3 +1,9 @@
+## [1.2.1](https://github.com/danieleavolio/lovaion-patches/compare/v1.2.0...v1.2.1) (2026-10-22)
+
+### 🐛 Bug Fixes
+
+* keep the Column premium unlock after a restart ([fb8c90e](https://github.com/danieleavolio/lovaion-patches/commit/fb8c90e30be6472339c6cbd627eefe6ac82ec212))
+
 ## [1.2.0](https://github.com/danieleavolio/lovaion-patches/compare/v1.1.0...v1.2.0) (2026-10-21)
 
 ### ✨ New Features
