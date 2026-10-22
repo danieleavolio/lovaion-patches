@@ -23,7 +23,22 @@ Morphe patches for the apps I use.
 
 | 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
 |----------|----------------|-----------|
-| [Unlock Premium](#unlock-premium) | Forces the premium entitlement to always resolve as active, hides the feed's premium activation banner and shows the active plan as MORHPE in the profile. Support the original developer! |  |
+| [Unlock Premium](#unlock-premium) | Forces the premium entitlement to always resolve as active, hides the feed's premium activation banner, shows the active plan as MORHPE in the profile and disables the app's over-the-air updates, which would otherwise replace the patched bundle on the next launch. Support the original developer! |  |
+
+</details>
+
+<details open>
+<summary>📦 GuitarTuna&nbsp;&nbsp;•&nbsp;&nbsp;1 patch</summary>
+<br>
+
+**🎯 Supported versions:**
+
+| 7.103.0 |
+| :---: |
+
+| 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
+|----------|----------------|-----------|
+| [Unlock Premium](#unlock-premium) | Unlocks the premium subscription, its song catalog and practice tools, and skips the subscription screen the app shows on launch. Support the original developer! |  |
 
 </details>
 
@@ -39,21 +54,6 @@ Morphe patches for the apps I use.
 | 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
 |----------|----------------|-----------|
 | [Unlock Pro](#unlock-pro) | Forces the Pro entitlement to always resolve as active, regardless of purchase or backend status. Support the original developer! |  |
-
-</details>
-
-<details open>
-<summary>📦 GuitarTuna&nbsp;&nbsp;•&nbsp;&nbsp;1 patch</summary>
-<br>
-
-**🎯 Supported versions:**
-
-| 7.103.0 |
-| :---: |
-
-| 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
-|----------|----------------|-----------|
-| [Unlock Premium](#unlock-premium) | Forces the premium entitlement to always resolve as active and skips the subscription screen shown on every launch. All premium features (custom tunings, Learn courses, Pro tools) unlock without the paywall. Support the original developer! |  |
 
 </details>
 

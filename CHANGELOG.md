@@ -1,3 +1,9 @@
+## [1.3.0](https://github.com/danieleavolio/lovaion-patches/compare/v1.2.1...v1.3.0) (2026-10-22)
+
+### ✨ New Features
+
+* add GuitarTuna premium unlock patch ([a6593ab](https://github.com/danieleavolio/lovaion-patches/commit/a6593ab618a8509733acfb8026e7bbc7011ea8d7))
+
 ## [1.2.1](https://github.com/danieleavolio/lovaion-patches/compare/v1.2.0...v1.2.1) (2026-10-22)
 
 ### 🐛 Bug Fixes
