@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.2.1",
+  "version": "1.2.0",
   "patches": [
     {
       "name": "Unlock Premium",
@@ -20,6 +20,34 @@
           "targets": [
             {
               "version": "2.0.1",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Unlock Premium",
+      "description": "Unlocks the premium subscription, its song catalog and practice tools, and skips the subscription screen the app shows on launch. Support the original developer!",
+      "default": true,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "com.ovelin.guitartuna",
+          "name": "GuitarTuna",
+          "description": null,
+          "apkFileType": "XAPK",
+          "appIconColor": "#00A388",
+          "signatures": [
+            "432eacd50197216ca879c8fd3c1322ad6e4c51cbfc76e4138d727b75cdc4864d"
+          ],
+          "targets": [
+            {
+              "version": "7.103.0",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
