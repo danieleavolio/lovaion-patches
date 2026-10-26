@@ -48,6 +48,27 @@ object Constants {
     )
 
     /**
+     * Tickdrop (com.sgnoogle.tickdrop). The plus gate is a single coroutine
+     * emit inside the obfuscated dispatcher, matched by exact instructions,
+     * so only the analyzed release is targeted.
+     */
+    val COMPATIBILITY_TICKDROP = Compatibility(
+        name = "Tickdrop", // App name as it appears in the Android launcher.
+        packageName = "com.sgnoogle.tickdrop",
+        // Tickdrop is distributed as split APKs (base + abi/locale/density).
+        apkFileType = ApkFileType.XAPK,
+        appIconColor = 0x22C55E,
+        // SHA-256 of the signing certificate (apksigner verify --print-certs).
+        signatures = setOf(
+            "fb3773930da3293dcce9352c40f5c17ca0623f34cb2b2571595e13ba536456ea",
+        ),
+        targets = listOf(
+            // Exact release the patch was developed against.
+            AppTarget(version = "1.9.6"),
+        ),
+    )
+
+    /**
      * GuitarTuna (com.ovelin.guitartuna). The subscription gates are native
      * entry points matched by exact bytes, so only the analyzed release is
      * targeted.
