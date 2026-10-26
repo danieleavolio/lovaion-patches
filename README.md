@@ -11,7 +11,23 @@ Morphe patches for the apps I use.
 ## Patches
 
 <!-- PATCHES_START -->
-> **[v1.3.0](https://github.com/danieleavolio/lovaion-patches/releases/tag/v1.3.0)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;3 patches total
+> **[v1.3.0](https://github.com/danieleavolio/lovaion-patches/releases/tag/v1.3.0)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;5 patches total
+<details open>
+<summary>📦 Tickdrop&nbsp;&nbsp;•&nbsp;&nbsp;2 patches</summary>
+<br>
+
+**🎯 Supported versions:**
+
+| 1.9.6 |
+| :---: |
+
+| 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
+|----------|----------------|-----------|
+| [Bypass PairIP license check](#bypass-pairip-license-check) | Disables the PairIP license check so a re-signed build of Tickdrop starts instead of being refused. Required by every other patch. |  |
+| [Unlock Plus](#unlock-plus) | Forces the Plus entitlement to always resolve as active, unlocking the premium skins, the unlimited tasks, pinning and backup. Support the original developer! |  |
+
+</details>
+
 <details open>
 <summary>📦 Column&nbsp;&nbsp;•&nbsp;&nbsp;1 patch</summary>
 <br>

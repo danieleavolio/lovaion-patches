@@ -1,3 +1,14 @@
+## [1.3.0](https://github.com/danieleavolio/lovaion-patches/compare/v1.2.1...v1.3.0) (2026-10-26)
+
+### 🐛 Bug Fixes
+
+* **ci:** resolve e2eVerify arguments only when the task runs ([e8e4a6f](https://github.com/danieleavolio/lovaion-patches/commit/e8e4a6f18751288e8a8327cd4fb2aa09ff1e1c9f))
+
+### ✨ New Features
+
+* add GuitarTuna premium unlock patch ([a6593ab](https://github.com/danieleavolio/lovaion-patches/commit/a6593ab618a8509733acfb8026e7bbc7011ea8d7))
+* add Tickdrop Plus unlock patch ([8b0bdc5](https://github.com/danieleavolio/lovaion-patches/commit/8b0bdc513c9c35e73aa68ce2dd876535c258a548))
+
 ## [1.3.0](https://github.com/danieleavolio/lovaion-patches/compare/v1.2.1...v1.3.0) (2026-10-22)
 
 ### ✨ New Features
