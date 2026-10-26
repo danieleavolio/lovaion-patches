@@ -47,10 +47,17 @@ tasks {
 
         classpath = sourceSets["main"].output + e2eRuntime
         mainClass.set("util.E2eMainKt")
-        args(
-            providers.gradleProperty("apk").get(),
-            providers.gradleProperty("out").get(),
-        )
+
+        // Resolved only when the task runs, so a build that does not use it (CI, :tasks)
+        // never fails on the missing properties.
+        doFirst {
+            val apk = providers.gradleProperty("apk").orNull
+                ?: error("Pass -Papk=<input.apk> -Pout=<output.apk>")
+            val out = providers.gradleProperty("out").orNull
+                ?: error("Pass -Pout=<output.apk>")
+
+            args(apk, out)
+        }
     }
 
     // Used by gradle-semantic-release-plugin.
