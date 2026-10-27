@@ -3,8 +3,8 @@
 > **PATCHED BY MORPHE** 🛠️ — all patches in this repository are built for and applied
 > with [Morphe](https://morphe.software) / Morphe Manager.
 >
-> ❤️ **Support the original developers:** if you use these apps every day, consider
-> subscribing or leaving a review — see [Support the original developers](#support-the-original-developers).
+> ☕ **Support this work:** [ko-fi.com/danieleavolio](https://ko-fi.com/danieleavolio) —
+> see [Support this work](#support-this-work) and the [legal notice](#legal-notice).
 
 Morphe patches for the apps I use.
 
@@ -24,7 +24,7 @@ Morphe patches for the apps I use.
 | 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
 |----------|----------------|-----------|
 | [Bypass PairIP license check](#bypass-pairip-license-check) | Disables the PairIP license check so a re-signed build of Tickdrop starts instead of being refused. Required by every other patch. |  |
-| [Unlock Plus](#unlock-plus) | Forces the Plus entitlement to always resolve as active, unlocking the premium skins, the unlimited tasks, pinning and backup. Support the original developer! |  |
+| [Unlock Plus](#unlock-plus) | Forces the Plus entitlement to always resolve as active, unlocking the premium skins, the unlimited tasks, pinning and backup. |  |
 
 </details>
 
@@ -39,7 +39,7 @@ Morphe patches for the apps I use.
 
 | 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
 |----------|----------------|-----------|
-| [Unlock Premium](#unlock-premium) | Forces the premium entitlement to always resolve as active, hides the feed's premium activation banner, shows the active plan as MORHPE in the profile and disables the app's over-the-air updates, which would otherwise replace the patched bundle on the next launch. Support the original developer! |  |
+| [Unlock Premium](#unlock-premium) | Forces the premium entitlement to always resolve as active, hides the feed's premium activation banner, shows the active plan as MORHPE in the profile and disables the app's over-the-air updates, which would otherwise replace the patched bundle on the next launch. |  |
 
 </details>
 
@@ -54,7 +54,7 @@ Morphe patches for the apps I use.
 
 | 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
 |----------|----------------|-----------|
-| [Unlock Premium](#unlock-premium) | Unlocks the premium subscription, its song catalog and practice tools, and skips the subscription screen the app shows on launch. Support the original developer! |  |
+| [Unlock Premium](#unlock-premium) | Unlocks the premium subscription, its song catalog and practice tools, and skips the subscription screen the app shows on launch. |  |
 
 </details>
 
@@ -69,7 +69,7 @@ Morphe patches for the apps I use.
 
 | 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
 |----------|----------------|-----------|
-| [Unlock Pro](#unlock-pro) | Forces the Pro entitlement to always resolve as active, regardless of purchase or backend status. Support the original developer! |  |
+| [Unlock Pro](#unlock-pro) | Forces the Pro entitlement to always resolve as active, regardless of purchase or backend status. |  |
 
 </details>
 
@@ -107,13 +107,60 @@ export GITHUB_TOKEN=ghp_xxxxxxxxxxxxxxxxxxxx
 
 Output: `patches/build/libs/patches-*.mpp`. See `BUILD.md` for the full setup.
 
-## Support the original developers
+## Support this work
 
-- **Cinemaniac** is an independent one-person app by Antonio Papalillo: subscriptions are
-  what keep it going.
-- **Column** is an independent news product: the premium subscription is what keeps it alive.
+These patches are free and stay free. If they save you time, you can buy me a coffee:
 
-If these apps are part of your day, the best thanks is a subscription and a good review.
+**☕ [ko-fi.com/danieleavolio](https://ko-fi.com/danieleavolio)**
+
+Support is voluntary and pays for maintenance: tracking new app releases, rebuilding
+against Morphe updates and answering issue reports. It is not a sale — no patched app,
+no premium content and no access to anyone else's software is provided in exchange.
+
+## Legal notice
+
+This is a statement of the legal basis on which this repository is published, and of the
+rights it exercises. It is written to be read as a notice, not as a request for
+permission.
+
+**What is published.** Source code for Morphe patches, technical descriptions and build
+configuration. No APK, no application asset, no signing key, no licence key and no paid
+content. Every patched application is downloaded by the user from its own distributor and
+patched on the user's own device.
+
+**What the law allows.** The exceptions that govern computer programs cover exactly this
+activity: modification of a copy you lawfully hold, for your own use, and reproduction of
+the code needed to make programs work together.
+
+- **European Union** — Directive 2009/24/EC: Article 5(1) (reproduction, translation,
+  adaptation and transformation necessary for the use of the program by the lawful
+  acquirer, including error correction), Article 5(2) (backup copy) and Article 6
+  (decompilation for interoperability, without authorisation of the rightholder, where it
+  is indispensable and limited to the parts required).
+- **Italy** — Legge 633/1941: art. 64-ter (free uses for the legitimate acquirer),
+  art. 64-quater (decompilation for interoperability) and art. 64-quinquies (observation,
+  study and testing of the program's functioning).
+- **United States** — 17 U.S.C. §117(a) (adaptation as an essential step in the use of the
+  program) and §1201(f) (reverse engineering for interoperability), together with the
+  exemptions adopted by the Librarian of Congress under §1201(a)(1)(B) for software that
+  runs on devices the user owns.
+
+**What is protected as expression.** Publishing patch code and the technical analysis
+behind it is original expression by its author: art. 21 and art. 33 of the Italian
+Constitution, art. 10 ECHR, art. 11 and art. 13 of the EU Charter of Fundamental Rights.
+Describing a technique, and shipping code that implements it, is not the same act as
+committing an offence with it.
+
+**What this repository does not do.** It does not host or distribute third-party
+binaries, does not redistribute premium content or application assets, does not collect or
+resell accounts or credentials, and does not sell anyone else's software. The patches are
+diffs applied by the user to a copy already on their device, and the resulting build stays
+there.
+
+**No affiliation.** This project is independent. It is not affiliated with, endorsed by or
+acting on behalf of Morphe, ReVanced or any of the applications it targets. Product names
+and trademarks belong to their respective owners and are used only to identify what a
+patch applies to.
 
 ## Credits & license
 

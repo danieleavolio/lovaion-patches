@@ -83,8 +83,7 @@ private fun ByteArray.toHexString() = joinToString(" ") { "%02X".format(it) }
 val unlockPremiumPatch = rawResourcePatch(
     name = "Unlock Premium",
     description = "Unlocks the premium subscription, its song catalog and practice tools, " +
-        "and skips the subscription screen the app shows on launch. " +
-        "Support the original developer!",
+        "and skips the subscription screen the app shows on launch.",
     default = true,
 ) {
     compatibleWith(COMPATIBILITY_GUITARTUNA)

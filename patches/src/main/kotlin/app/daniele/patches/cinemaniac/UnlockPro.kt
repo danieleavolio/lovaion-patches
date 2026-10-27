@@ -79,7 +79,7 @@ private fun ByteArray.toHexString() = joinToString(" ") { "%02X".format(it) }
 val unlockProPatch = rawResourcePatch(
     name = "Unlock Pro",
     description = "Forces the Pro entitlement to always resolve as active, " +
-        "regardless of purchase or backend status. Support the original developer!",
+        "regardless of purchase or backend status.",
     default = true,
 ) {
     compatibleWith(COMPATIBILITY_CINEMANIAC)

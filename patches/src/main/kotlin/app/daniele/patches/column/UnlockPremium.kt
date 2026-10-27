@@ -145,8 +145,7 @@ val unlockPremiumPatch = rawResourcePatch(
     description = "Forces the premium entitlement to always resolve as active, " +
         "hides the feed's premium activation banner, shows the active plan " +
         "as MORHPE in the profile and disables the app's over-the-air updates, " +
-        "which would otherwise replace the patched bundle on the next launch. " +
-        "Support the original developer!",
+        "which would otherwise replace the patched bundle on the next launch.",
     default = true,
 ) {
     compatibleWith(COMPATIBILITY_COLUMN)

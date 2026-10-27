@@ -4,7 +4,7 @@ patches {
     about {
         name = "Lovaion Patches"
         description = "Morphe patches for Cinemaniac, Column, GuitarTuna and Tickdrop. " +
-            "Patched by Morphe — support the original developers!"
+            "Patched by Morphe."
         source = "https://github.com/danieleavolio/lovaion-patches"
         author = "Daniele Avolio"
         contact = "https://github.com/danieleavolio"

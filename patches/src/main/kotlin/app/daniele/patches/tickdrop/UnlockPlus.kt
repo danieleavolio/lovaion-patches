@@ -110,8 +110,7 @@ val pairIpBypassPatch = bytecodePatch(
 val unlockPlusPatch = bytecodePatch(
     name = "Unlock Plus",
     description = "Forces the Plus entitlement to always resolve as active, " +
-        "unlocking the premium skins, the unlimited tasks, pinning and backup. " +
-        "Support the original developer!",
+        "unlocking the premium skins, the unlimited tasks, pinning and backup.",
     default = true,
 ) {
     compatibleWith(COMPATIBILITY_TICKDROP)
