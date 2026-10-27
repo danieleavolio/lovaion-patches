@@ -1,3 +1,9 @@
+## [1.4.1](https://github.com/danieleavolio/lovaion-patches/compare/v1.4.0...v1.4.1) (2026-10-27)
+
+### 🐛 Bug Fixes
+
+* **patches:** drop developer-support prompts and publish a rights notice ([1a45cb0](https://github.com/danieleavolio/lovaion-patches/commit/1a45cb0532a6f741137771b83c97beeddb8aea6f))
+
 ## [1.4.0](https://github.com/danieleavolio/lovaion-patches/compare/v1.3.0...v1.4.0) (2026-10-26)
 
 ### 🐛 Bug Fixes
