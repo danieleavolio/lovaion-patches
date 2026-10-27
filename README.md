@@ -94,6 +94,13 @@ Morphe patches for the apps I use.
 3. Select the app, keep the patch enabled (both are on by default), patch and install.
    The original app must be uninstalled first (different signature).
 
+Patches are listed only for the exact versions above: if your installed build differs,
+Morphe shows no patches for that app until you install the supported version.
+
+If the source reports that the patch bundle could not be downloaded, it is pointing at a
+release asset that is not available yet — refresh the source (or remove and add it again)
+so it picks up the current release listed at the top of this page.
+
 ## Build
 
 Morphe's Gradle plugin is published on GitHub Packages, which requires authentication even
